@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALX HTML + CSS Project</title>
+  
+  <style>
+    /* =====================
+       General Reset & Base Styles
+       ===================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      color: #161616;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      background-color: #ffffff;
+    }
+
+    /* =====================
+       Header
+       ===================== */
+    header {
+      background-color: #f4f4f4;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    header ul li {
+      display: inline;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #007BFF;
+    }
+
+    /* =====================
+       Main Layout
+       ===================== */
+    main {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      min-height: 0;
+    }
+
+    article {
+      flex: 2;
+      padding: 1em;
+      overflow-y: auto;
+    }
+
+    aside {
+      flex: 1;
+      padding: 1em;
+      background-color: #f9f9f9;
+      border-left: 1px solid #ddd;
+      overflow-y: auto;
+    }
+
+    /* =====================
+       Table Styling
+       ===================== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      background-color: #fff;
+    }
+
+    th, td {
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /* =====================
+       Footer
+       ===================== */
+    footer {
+      background-color: #f4f4f4;
+      padding: 1em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* =====================
+       Responsive Design
+       ===================== */
+    @media (max-width: 992px) {
+      main {
+        flex-direction: column;
+      }
+
+      article, aside {
+        flex: none;
+        width: 100%;
+      }
+
+      aside {
+        border-left: none;
+        border-top: 1px solid #ddd;
+      }
+
+      header ul {
+        flex-direction: column;
+        gap: 1em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+      }
+
+      header {
+        padding: 0.75em 0;
+      }
+
+      header ul {
+        gap: 0.5em;
+      }
+
+      article, aside {
+        padding: 0.75em;
+      }
+
+      th, td {
+        padding: 0.5em;
+        font-size: 0.95em;
+      }
+
+      footer {
+        font-size: 0.8em;
+        padding: 0.75em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tweets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Welcome to ALX HTML + CSS Project</h1>
+      <p>This is a demo page for showcasing the base layout and CSS structure taught in the ALX curriculum.</p>
+      <p>Below is a sample table for demonstration:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Knoph</td>
+            <td>Developer</td>
+            <td>Kenya</td>
+          </tr>
+          <tr>
+            <td>Grace</td>
+            <td>Designer</td>
+            <td>Ghana</td>
+          </tr>
+          <tr>
+            <td>Samuel</td>
+            <td>Engineer</td>
+            <td>Uganda</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">About the Project</a></li>
+        <li><a href="#">ALX Curriculum</a></li>
+        <li><a href="#">GitHub Repo</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ALX Project | Built by <a href="https://github.com/Knoph1">Knoph Oluoch Ayieko</a></p>
+  </footer>
+</body>
+</html>
