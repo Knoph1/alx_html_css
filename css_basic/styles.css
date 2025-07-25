@@ -1,40 +1,107 @@
-/* Make the body a flex container in column direction */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    color: #161616;
-    font-family: Helvetica;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+/* General Reset and Base Styles */
+* {
+  box-sizing: border-box;
 }
 
-/* Make main a flex container in row direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #161616;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+
+/* Header */
+header {
+  background-color: #f4f4f4;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+header ul li {
+  display: inline;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #007BFF;
+}
+
+/* Main Layout */
 main {
   display: flex;
-  flex-direction: row;
-  flex: auto; /* Auto height and width */
+  flex: 1;
+  min-height: 0; /* Enables child flex items to scroll properly */
 }
 
-/* Article takes 2/3 of the main width */
+/* Article (2/3 width) */
 article {
   flex: 2;
+  padding: 1em;
   overflow-y: auto;
-  padding: 10px;
 }
 
-/* Aside takes 1/3 of the main width */
+/* Aside (1/3 width) */
 aside {
   flex: 1;
+  padding: 1em;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
   overflow-y: auto;
-  padding: 10px;
 }
 
-/* Optional: Style for header and footer */
-header, footer {
-  padding: 15px;
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
   background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
