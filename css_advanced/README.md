@@ -9,14 +9,25 @@ This is a **frontend project** for ALX Software Engineering Program, focusing on
 ## 📁 Project Structure
 
 ```
-ALX_HTML_CSs/
-│
-├── index.html            # Main landing page
-├── tweets.html           # Secondary page (optional)
-├── base.css              # Reset & base style sheet
-├── style.css             # Main custom styling
-├── images/               # All image and icon assets
-└── README.md             # This file
+ALX_HTML_CSS/
+├── css_advanced
+│   ├── images/
+│   ├── base.css
+│   ├── index copy.html
+│   ├── index.html
+│   ├── README.md
+│   └── styles.css
+├── css_basic
+│   ├── base.css
+│   ├── base2.css
+│   ├── index.html
+│   ├── sample-css.html
+│   ├── styles.css
+│   ├── styles2.css
+│   ├── styles3.css
+│   └── tweets.html
+├── .gitignore
+└── README.md
 ```
 
 ## 💡 Learning Objectives
@@ -57,8 +68,8 @@ By completing this project, I am now able to explain:
 
 ## 🔗 Project Link
 
-🔸 GitHub Repository:  
-[https://github.com/Knoph1/alx_html_css](https://github.com/Knoph1/alx_html_css)
+🔸 GitHub Repository:
+[alx_html_css](https://github.com/Knoph1/alx_html_css)
 
 > This project was completed as part of the ALX Software Engineering Curriculum.
 
@@ -69,7 +80,7 @@ This project is fully responsive across:
 - Tablets
 - Desktop screens
 
-Using **flexbox**, **media queries**, and **percentage-based units** to ensure fluid layouts.
+Using **flexbox**, **media queries** and **percentage-based units** to ensure fluid layouts.
 
 ## ✅ Validation
 
@@ -87,14 +98,14 @@ Using **flexbox**, **media queries**, and **percentage-based units** to ensure f
 
 ## ✍️ Author
 
-**Knoph Ayieko**  
-- 💻 Front-End Web Developer  
-- 📧 knophayieko@gmail.com  
+**Knoph Ayieko**
+- 💻 Front-End Web Developer
+- 📧 knophayieko@gmail.com
 - 🌍 [GitHub Profile](https://github.com/Knoph1)
 
 ## 📝 License
 
-This project is released under the [ALX Intranet Guidelines].  
+This project is released under the [ALX Intranet Guidelines].
 You are free to fork, build and learn from it — just don’t plagiarize.
 
 ---
