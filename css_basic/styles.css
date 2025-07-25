@@ -1,8 +1,40 @@
+/* Make the body a flex container in column direction */
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
     color: #161616;
     font-family: Helvetica;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
+}
+
+/* Make main a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Auto height and width */
+}
+
+/* Article takes 2/3 of the main width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Aside takes 1/3 of the main width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Optional: Style for header and footer */
+header, footer {
+  padding: 15px;
+  background-color: #f0f0f0;
 }
