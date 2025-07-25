@@ -12,6 +12,7 @@ body {
     padding: 0;
 }
 
+/* Header */
 header ul li {
   display: inline;
 }
@@ -22,6 +23,7 @@ header a {
   font-weight: bold;
 }
 
+/* Main Layout */
 main {
   display: flex;
   flex-direction: row;
