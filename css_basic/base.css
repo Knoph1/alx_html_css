@@ -1,73 +1,91 @@
-/* Reset some default browser styles */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* === Reset & Box Model === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Set a base font for the site */
+/* === Base Typography === */
 body, html {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
 }
 
-/* Headings spacing and weight */
+/* === Headings === */
 h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 0.5em;
-    font-weight: bold;
+  margin: 1em 0 0.5em;
+  font-weight: 600;
 }
 
-/* Paragraph spacing */
+/* === Paragraphs === */
 p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-/* Links */
+/* === Links === */
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Lists */
+/* === Lists === */
 ul {
-    list-style: none;
-    padding: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-li {
-    padding: 0.25em 0;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Table Defaults */
+/* === Tables === */
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 1em;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
 }
 
 th, td {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    text-align: left;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
-/* Blockquote style */
+/* === Images === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Blockquote (for Tweets) === */
 blockquote {
-    margin: 1em 0;
-    padding-left: 1em;
-    border-left: 4px solid #ddd;
-    color: #666;
-    font-style: italic;
+  margin: 1.5em 0;
+  padding-left: 1em;
+  border-left: 4px solid #ccc;
+  color: #555;
+  font-style: italic;
+}
+
+/* === Basic Layout Elements === */
+header, footer {
+  padding: 1em;
+  background-color: #f0f0f0;
+}
+
+main {
+  padding: 1em;
+}
+
+/* === Navigation === */
+header ul {
+  display: flex;
+  gap: 1em;
+}
+
+header li {
+  list-style: none;
 }
