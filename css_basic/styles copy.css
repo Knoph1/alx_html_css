@@ -1,0 +1,77 @@
+/* Base layout structure */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #f4f4f4;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Navigation Menu */
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+header ul li {
+  display: inline;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 0; /* Required for proper flex child overflow scrolling */
+}
+
+/* Article: 2/3 of the width */
+article {
+  flex: 2;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+/* Aside: 1/3 of the width */
+aside {
+  flex: 1;
+  padding: 1em;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 1em;
+  text-align: center;
+}
