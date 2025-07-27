@@ -1,138 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>SmileSchool | Learn with a Smile</title>
-  <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>SmileSchool</title>
+  <link href="base.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="bg-dark text-white">
-    <div class="container">
-      <nav class="navbar">
-        <img src="images/logo.png" alt="SmileSchool Logo" class="logo" />
-        <ul class="nav-links">
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#login">Login</a></li>
-        </ul>
-      </nav>
-      <section class="hero">
-        <h1>Get schooled</h1>
-        <p>Smiles | Grin | Laugh</p>
-        <a href="#learn" class="btn btn-accent">Register for free</a>
-      </section>
+  <header class="hero">
+    <nav class="navbar container">
+      <img src="https://fakeimg.pl/100x40?text=Logo" alt="SmileSchool Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">COURSES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content container text-center">
+      <h1>Get schooled</h1>
+      <p class="tagline">SMILES &nbsp;•&nbsp; GRIN &nbsp;•&nbsp; LAUGH</p>
+      <button class="btn btn-purple">REGISTER FOR FREE</button>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <section class="section instructors bg-light text-center">
-      <div class="container">
-        <h2>Learn from the pros</h2>
-        <div class="card-grid">
-          <article class="card">
-            <img src="images/pro1.jpg" alt="Instructor" />
-            <h3>Phillip Massey</h3>
-            <p>Smile of the year 2018</p>
-          </article>
-          <article class="card">
-            <img src="images/pro2.jpg" alt="Instructor" />
-            <h3>Nannie Lawrence</h3>
-            <p>Best little smile 2017</p>
-          </article>
-          <article class="card">
-            <img src="images/pro3.jpg" alt="Instructor" />
-            <h3>Bruce Walsh</h3>
-            <p>Best Friend Smile live performance 2019</p>
-          </article>
-          <article class="card">
-            <img src="images/pro4.jpg" alt="Instructor" />
-            <h3>Henry Hughes</h3>
-            <p>24h smiles winner 2016 - 2019</p>
-          </article>
-        </div>
+  <section class="learn-section">
+    <h2>Learn from the pros</h2>
+    <div class="learn-profiles container">
+      <div class="profile">
+        <img src="./images/1 (3).png" alt="Phillip Massey" />
+        <h3>Phillip Massey</h3>
+        <p>« Smile of the year » 2018 - 2019</p>
       </div>
-    </section>
-
-    <section class="section video-preview bg-accent text-white">
-      <div class="container">
-        <h2>Most popular tutorials</h2>
-        <div class="video-grid">
-          <div class="video-card">
-            <img src="images/vid1.jpg" alt="Video 1" />
-            <h3>Diagonal Smile</h3>
-            <p>Phillip Massey</p>
-          </div>
-          <div class="video-card">
-            <img src="images/vid2.jpg" alt="Video 2" />
-            <h3>Sad Smile</h3>
-            <p>Nannie Lawrence</p>
-          </div>
-          <div class="video-card">
-            <img src="images/vid3.jpg" alt="Video 3" />
-            <h3>Natural Smile</h3>
-            <p>Bruce Walsh</p>
-          </div>
-          <div class="video-card">
-            <img src="images/vid4.jpg" alt="Video 4" />
-            <h3>Happy Smile</h3>
-            <p>Henry Hughes</p>
-          </div>
-        </div>
+      <div class="profile">
+        <img src="./images/6.png" alt="Nannie Lawrence" />
+        <h3>Nannie Lawrence</h3>
+        <p>Best « little smile » 2017</p>
       </div>
-    </section>
-
-    <section id="pricing" class="section pricing bg-light text-center">
-      <div class="container">
-        <h2>Pricing</h2>
-        <div class="pricing-tiers">
-          <div class="tier">
-            <h3>FREE</h3>
-            <p>$0/month</p>
-            <ul>
-              <li>Access to free tutorials</li>
-              <li>Community support</li>
-            </ul>
-            <a href="#" class="btn">Join Free</a>
-          </div>
-          <div class="tier">
-            <h3>PRO</h3>
-            <p>$15/month</p>
-            <ul>
-              <li>All Free features</li>
-              <li>1-on-1 mentoring</li>
-              <li>Downloadable content</li>
-            </ul>
-            <a href="#" class="btn btn-accent">Go Pro</a>
-          </div>
-          <div class="tier">
-            <h3>TEAM</h3>
-            <p>$30/month</p>
-            <ul>
-              <li>All Pro features</li>
-              <li>Team management</li>
-              <li>Usage analytics</li>
-            </ul>
-            <a href="#" class="btn">Join as Team</a>
-          </div>
-        </div>
+      <div class="profile">
+        <img src="./images/7.png" alt="Bruce Walters" />
+        <h3>Bruce Walters</h3>
+        <p>Best « Friend Smile » live performance 2019</p>
       </div>
-    </section>
-  </main>
+      <div class="profile">
+        <img src="./images/8.png" alt="Henry Hughes" />
+        <h3>Henry Hughes</h3>
+        <p>« 24h smiles » winner 2016 - 2019</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center">
+  <section class="quote-section">
     <div class="container">
-      <img src="images/logo.png" alt="Logo" class="footer-logo" />
-      <p>&copy; 2025 SmileSchool. All rights reserved.</p>
+      <img src="./images/Bitmap.png" alt="testimonial" />
+      <blockquote>
+        <p>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</p>
+        <footer>NAME, <span class="text-muted">weather presenter</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="tutorials-section">
+    <h2>Most <span>popular</span> tutorials</h2>
+    <div class="tutorials-cards container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./images/Bitmap (1).png" alt="Diagonal Smile" />
+        <div class="card-content">
+          <h3>Diagonal Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+          <div class="author">
+            <img src="./images/1 (3).png" alt="Phillip Massey" />
+            <h4>Phillip Massey</h4>
+          </div>
+          <div class="rating-time">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>8 min</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for Happy, Natural, Sad Smiles -->
+      <!-- Cards 2–4 (code is identical with different images and titles) -->
+      <div class="card">
+        <img src="./images/Bitmap (4).png" alt="Happy Smile" />
+        <div class="card-content">
+          <h3>Happy Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+          <div class="author">
+            <img src="./images/1 (3).png" alt="Phillip Massey" />
+            <h4>Phillip Massey</h4>
+          </div>
+          <div class="rating-time">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>8 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/Bitmap (3).png" alt="Natural Smile" />
+        <div class="card-content">
+          <h3>Natural Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+          <div class="author">
+            <img src="./images/1 (3).png" alt="Phillip Massey" />
+            <h4>Phillip Massey</h4>
+          </div>
+          <div class="rating-time">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>8 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/Bitmap (2).png" alt="Sad Smile" />
+        <div class="card-content">
+          <h3>Sad Smile</h3>
+          <p>Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+          <div class="author">
+            <img src="./images/1 (3).png" alt="Phillip Massey" />
+            <h4>Phillip Massey</h4>
+          </div>
+          <div class="rating-time">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>8 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="membership-section">
+    <h2>Free membership</h2>
+    <div class="membership-features container">
+      <div class="feature">
+        <img src="./images/smile.svg" alt="Smile Icon" />
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/smile.svg" alt="Smile Icon" />
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/smile.svg" alt="Smile Icon" />
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/smile.svg" alt="Smile Icon" />
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <button class="btn btn-purple">REGISTER FOR FREE</button>
+  </section>
+
+  <section class="faq-section">
+    <h2>F.A.Q.</h2>
+    <div class="faq-questions container">
+      <div class="question">
+        <h3>How does this work?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+      </div>
+      <div class="question">
+        <h3>How does this work?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+      </div>
+      <div class="question">
+        <h3>How does this work?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+      </div>
+      <div class="question">
+        <h3>How does this work?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <img src="https://fakeimg.pl/100x40?text=Logo" alt="SmileSchool Logo" class="logo" />
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p>© SmileSchool 2020</p>
     </div>
   </footer>
 </body>
-
 </html>
