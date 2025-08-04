@@ -1,6 +1,10 @@
-# Knoph Ayieko - Portfolio Website
+# ALX
 
-Welcome to my personal **portfolio website**, built with fundamental HTML and CSS. This project showcases my professional background, technical projects, and provides a platform for contact and networking.
+## HTML
+
+## CSS
+
+Welcome to.
 
 ---
 
