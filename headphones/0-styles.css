@@ -1,0 +1,161 @@
+@import url('0-styles.css');
+
+/* WHAT WE DO SECTION */
+.what-we-do {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service {
+    width: 200px;
+}
+
+.service span {
+    font-size: 3rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --main-color: #FF6565;
+    --text-color: white;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    background-color: black;
+    color: var(--text-color);
+}
+
+/* Header */
+.header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
