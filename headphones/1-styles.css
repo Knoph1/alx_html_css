@@ -1,0 +1,63 @@
+@import url('0-styles.css');
+
+/* WHAT WE DO SECTION */
+.what-we-do {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service {
+    width: 200px;
+}
+
+.service span {
+    font-size: 3rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
