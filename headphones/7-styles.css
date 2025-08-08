@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero h1 {
+    font-size: 48px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    background: #ff3366;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h2 {
+    font-size: 32px;
+}
+.section-desc {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* What we do icons */
+.icons-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.icon-card {
+    width: 200px;
+    text-align: center;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.icon-card span {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+    color: #ff3366;
+}
+.icon-card:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+/* Our results */
+.dark-section {
+    background: #1e1e1e;
+    color: white;
+}
+.pentagons-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.pentagon-card {
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+.pentagon-shape {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ff3366;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.pentagon-card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #ff3366;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.socials a {
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+}
