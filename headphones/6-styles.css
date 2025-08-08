@@ -1,0 +1,137 @@
+/* ===== 6-styles.css - CSS pentagon results ===== */
+
+/* Reset / base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #070707;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+}
+
+/* Container helper */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+/* Header */
+.site-header {
+  padding: 1rem 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+.site-header .logo { font-weight: 700; color: #fff; text-decoration: none; font-size: 1.2rem; }
+.nav-links { list-style: none; display: flex; gap: 1.25rem; align-items: center; }
+.nav-links a { color: #ddd; text-decoration: none; font-weight: 600; font-size: .95rem; }
+.nav-links a:hover { color: #ff6565; }
+
+/* Simple hero for context */
+.hero { padding: 3rem 0; text-align:center; }
+.hero-inner h1 { font-size: 2.1rem; margin-bottom: .6rem; }
+.hero-inner p { color: #cfcfcf; }
+
+/* OUR RESULTS */
+.our-results { padding: 2.5rem 0; text-align:center; }
+.our-results h2 { font-size: 1.6rem; margin-bottom: 1.25rem; }
+
+/* Grid layout */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  justify-items: center;
+}
+
+/* Result card */
+.result {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .9rem;
+}
+
+/* Pentagon wrapper to control size and accessibility */
+.pentagon {
+  width: 140px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  /* allow keyboard focus styling if needed */
+}
+
+/* The visible pentagon face -- using clip-path polygon */
+.pentagon-face {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#ff6b6b 0%, #ff3b3b 100%);
+  clip-path: polygon(50% 0%, 95% 35%, 78% 95%, 22% 95%, 5% 35%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .28s ease, box-shadow .28s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* hover / focus */
+.pentagon-face:hover,
+.pentagon-face:focus {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* Add a subtle numeric badge centered in the pentagon */
+.result-number {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+/* label under the number */
+.result-label {
+  font-size: .95rem;
+  color: #dcdcdc;
+}
+
+/* Make sure the number sits visually centered on the pentagon:
+   we absolutely position an inner pseudo element to overlap the pentagon-face */
+.pentagon-face::after {
+  content: attr(data-num);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.98);
+  pointer-events: none;
+}
+
+/* Accessibility: let keyboard users focus the pentagon */
+.pentagon-face[tabindex] { outline: none; }
+.pentagon-face[tabindex]:focus { box-shadow: 0 12px 30px rgba(0,0,0,0.7), 0 0 0 4px rgba(255,101,101,0.12); transform: translateY(-6px) scale(1.03); }
+
+/* Smaller screens: stack and reduce columns */
+@media (max-width: 880px) {
+  .results-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .pentagon { width: 120px; height: 120px; }
+}
+@media (max-width: 480px) {
+  .results-grid { grid-template-columns: 1fr; }
+  .result { max-width: 320px; }
+  .pentagon { width: 160px; height: 160px; } /* slightly bigger for single column */
+  .hero-inner h1 { font-size: 1.5rem; }
+}
+
+/* Optional: small styling tweaks to place number inside pentagon reliably:
+   We'll set the number in the DOM rather than using pseudo content for robust automation. */
+.result-body { margin-top: -.8rem; }
